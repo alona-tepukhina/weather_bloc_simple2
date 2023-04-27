@@ -1,16 +1,12 @@
 # weather_bloc_simple2
 
-A new Flutter project.
+.env file (API KEY)
+For this project I used .env directory to store my API Key, if you want to use it, you need to create this structure on the root of your app:
 
-## Getting Started
+assets:
+- .env
+  Inside this file you need to put your API KEY like that:
 
-This project is a starting point for a Flutter application.
+apiKey = 'your api key code here';
+For more info you can check the official documentation of flutter_dotenv library.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

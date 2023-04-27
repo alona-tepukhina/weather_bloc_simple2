@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_bloc_simple2/data/model.dart';
+import 'package:weather_bloc_simple2/repository/models/current_weather.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_bloc_simple2/bloc/weather_bloc.dart';
 
@@ -13,12 +13,6 @@ class CurrentWeatherWidget extends StatefulWidget {
 class _CurrentWeatherWidgetState extends State<CurrentWeatherWidget> {
   @override
   Widget build(BuildContext context) {
-    // String? city;
-    // int? conditionCode;
-    // String? weatherMessage;
-    // double? windSpeed;
-    // double? temperature;
-
     return BlocBuilder<WeatherBloc, WeatherState>(
       builder: (context, state) {
         if (state is WeatherLoadedState) {
@@ -58,10 +52,4 @@ class _CurrentWeatherWidgetState extends State<CurrentWeatherWidget> {
       },
     );
   }
-
-  // void onSearch(String request) {
-  //   BlocProvider.of<WeatherBloc>(context)
-  //     ..add(WeatherSearchEvent())
-  //     ..add(WeatherLoadEvent(request: request));
-  // }
 }
