@@ -3,6 +3,8 @@ import 'package:weather_bloc_simple2/repository/service/weather_service.dart';
 
 class WeatherRepository {
   const WeatherRepository({required this.service});
-
   final WeatherService service;
+
+  Future<CurrentWeather> getWeatherData(String request) async =>
+      service.getWeatherData(request);
 }
